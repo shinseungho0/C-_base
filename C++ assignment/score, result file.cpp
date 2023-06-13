@@ -20,7 +20,7 @@ int main() {
 			mname = name;
 		}
 	}
-	fout << fixed; // 소수점 고정
+	fout << fixed; // 소수점 고정 fout.setf(ios::fixed); 로 표현가능 해제시에는 cout.unsetf(ios::fixed);
 	fout.precision(2); // 자릿수 2
 	fout << "합계: " << sum << endl;
 	fout << "평균: " << sum / 31 << endl;
