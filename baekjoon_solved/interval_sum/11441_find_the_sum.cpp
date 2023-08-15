@@ -2,9 +2,11 @@
 using namespace std;
 
 int main() {
-	ios::sync_with_stdio(false);
+	// C++ 에서 시간 단축을 위한 3개 구문 추가
+	ios::sync_with_stdio(false); 
 	cin.tie(NULL);
 	cout.tie(NULL);
+	
 	int n; // 수의 개수
 	int arr[100000] = {}; // 수를 넣을 배열
 	int m; // 구간의 개수
@@ -19,6 +21,6 @@ int main() {
 	for (int i = 0; i < m; i++) {
 		int start, end;
 		cin >> start >> end;
-		cout << arr[end] - arr[start - 1] << '\n'; // 구간 합 공식
+		cout << arr[end] - arr[start - 1] << '\n'; // 구간 합 공식, endl 대신 '\n'을 써주는것도 시간 단축에 좋다.
 	}
 }
