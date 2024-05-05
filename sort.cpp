@@ -1,7 +1,7 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
-
+// 중요
 template <class T>
 void sort_print(T a[], int b) {                                    // sort(시작, 끝)
 	sort(a, a + b, less<T>()); // 올림차순 less<자료형>(), 내림차순 greater<자료형>()
